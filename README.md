@@ -2,7 +2,7 @@
 
 22300650 / 전도원
 
-### Assignment 1-1. My First Web Page
+## Assignment 1-1. My First Web Page
 
 한동대학교 오픈소스스튜디오 과제 01.
 AI를 활용해 자기소개 웹페이지를 제작하고, Git/GitHub로 버전을 관리한 뒤 Vercel로 배포하는 과정을 실습한 프로젝트입니다.
@@ -10,11 +10,11 @@ index.html은 AI로 생성한 원본이고, index2.html은 이를 복사해 직�
 
 ## Deploy
 
-Vercel Deploy: https://2026-oss-a01.vercel.app/
-index.html: https://2026-oss-a01.vercel.app/index.html
-index2.html: https://2026-oss-a01.vercel.app/index2.html
+- Vercel Deploy: https://2026-oss-a01.vercel.app/
+- index.html: https://2026-oss-a01.vercel.app/index.html
+- index2.html: https://2026-oss-a01.vercel.app/index2.html
 
-# Weekly Review
+## Weekly Review
 
 ## Key Learning
 
