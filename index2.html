@@ -63,19 +63,11 @@
 
       /* ---------- Masthead ---------- */
       .masthead {
-        padding: clamp(72px, 12vw, 160px) 0 var(--span);
-      }
-
-      .portrait {
-        display: block;
-        width: clamp(112px, 13vw, 168px);
-        aspect-ratio: 4 / 5;
-        object-fit: cover;
-        margin-bottom: clamp(28px, 4vw, 44px);
+        padding: clamp(72px, 12vw, 120px) 0 120px;
       }
 
       .masthead-title {
-        font-size: clamp(56px, 12.5vw, 172px);
+        font-size: clamp(56px, 12.5vw, 200px);
         font-weight: 900;
         font-stretch: 75%;
         line-height: 0.84;
@@ -141,6 +133,18 @@
         font-size: clamp(16px, 1.35vw, 18px);
         line-height: 1.85;
         color: var(--ink);
+      }
+
+      /* ---------- About 사진 ---------- */
+      .about-box {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+      }
+
+      .profile {
+        width: 150px;
+        height: auto;
       }
 
       /* ---------- Field pairs (Profile, This Semester) ---------- */
@@ -277,6 +281,10 @@
           gap: 24px;
         }
 
+        .about-box {
+          flex-direction: column;
+        }
+
         .rail {
           flex-direction: row;
           align-items: baseline;
@@ -297,13 +305,6 @@
     <main class="page">
       <!-- ===== Masthead ===== -->
       <header class="masthead">
-        <img
-          class="portrait"
-          src="images/profile.png"
-          alt="전도원 프로필 사진"
-          width="1122"
-          height="1402"
-        />
         <h1 class="masthead-title">
           AI ·<br />
           Computer<br />
@@ -317,12 +318,15 @@
         <div class="rail">
           <h3 class="rail-name">About Me</h3>
         </div>
-        <p class="lede">
-          저는 모든 좋은 소프트웨어는 언제나 추상적 상상으로부터 시작한다고 믿는
-          개발자입니다. AI, Web, App 그 너머까지 폭넓게 탐구하며, 가치 있는
-          아이디어를 쫓아 현실로 만들어 내는 것을 추구합니다. 꿈을 품고, 상상을
-          구체화하여 이에 실체를 부여합니다.
-        </p>
+        <div class="about-box">
+          <p class="lede">
+            저는 모든 좋은 소프트웨어는 언제나 추상적 상상으로부터 시작한다고
+            믿는 개발자입니다. AI, Web, App 그 너머까지 폭넓게 탐구하며, 가치
+            있는 아이디어를 쫓아 현실로 만들어 내는 것을 추구합니다. 꿈을 품고,
+            상상을 구체화하여 이에 실체를 부여합니다.
+          </p>
+          <img class="profile" src="images/profile.png" />
+        </div>
       </section>
 
       <!-- ===== Profile ===== -->
@@ -373,11 +377,12 @@
           <h3 class="rail-name">Interests</h3>
         </div>
         <ul class="stack">
-          <li>웹 프론트엔드</li>
-          <li>React · Vite</li>
+          <li>웹</li>
+          <li>양자컴퓨터</li>
           <li>AI 에이전트</li>
           <li>UI/UX 디자인</li>
-          <li>데스크톱 앱 (Electron)</li>
+          <li>모바일 · 데스크톱 앱</li>
+          <li>블록체인</li>
         </ul>
       </section>
 
@@ -389,7 +394,7 @@
         </div>
         <ul class="stack">
           <li><span class="emo">🎬</span>영화 감상</li>
-          <li><span class="emo">🎧</span>음악 · LP</li>
+          <li><span class="emo">🎧</span>음악 · 힙합</li>
           <li><span class="emo">🛹</span>스케이트보드</li>
           <li><span class="emo">💻</span>사이드 프로젝트</li>
         </ul>
@@ -418,6 +423,9 @@
         <ul class="links">
           <li>
             <a href="https://github.com/jeondowon" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://csee.handong.edu/" target="_blank">HGU CSEE</a>
           </li>
         </ul>
       </section>
